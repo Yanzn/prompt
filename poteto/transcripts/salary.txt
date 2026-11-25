@@ -1,0 +1,351 @@
+[00:00] So I'd like to share
+[00:02] share a couple of I have.
+[00:30] One thing is you can almost ask it to do anything in the digital world.
+[00:35] I was asking to do by 3D printing filament couple days ago.
+[00:40] And it does not only buy it for me.
+[00:43] I also ask it to add it to the inventory list.
+[00:46] So I have this notion database to track all my inventory different colors of the filament.
+[00:52] And once they bought it, it also like update the list for me.
+[00:57] I just discovered like the benefit of train different tasks together is really powerful.
+[01:02] Because another example is like let's say I want to sell my DJI mic on Facebook Marketplace.
+[01:08] I just send it a photo and then tell it do a couple of things.
+[01:12] So like sell something list something on Facebook Marketplace sounds easy.
+[01:16] But actually there are a lot of steps like you need to check the latest price for the model on the official website.
+[01:21] I want it to find out what's the lowest price offered in my area like who I'm competing with.
+[01:26] I want it to learn like how I write listing descriptions in the past.
+[01:31] And I'll suppose this new listing and then if nobody's interested in it automatically lower the price by $5 every week.
+[01:39] So you see like it's like a series of tasks dedicated in one single prompt.
+[01:45] And it will go execute the task.
+[01:48] And it's very interesting that I know that when it should write the description,
+[01:53] my writer bought, so I messaged the RIDAR bought.
+[01:57] It asked like I wrote Marketplace listing description in the past.
+[02:03] And then it was able to do the research.
+[02:05] It would be find out like how other people are selling it.
+[02:08] Eventually put up my list.
+[02:10] So in the past we may do like all those five steps manually by ourselves.
+[02:16] But now not only can delegate an individual task to it, but also like ask it to train the task for you.
+[02:23] I bought is replacing my email.
+[02:26] So like I would do things like, hey, what are the action items in my inbox today?
+[02:31] My email is still out of manage.
+[02:34] And like for things I identified, I can do it for me.
+[02:38] For example, I need to pay my friend money for dinner.
+[02:40] I'll just ask it to do so.
+[02:42] And if it doesn't have, have access, it will prompt me.
+[02:46] Signing page for me and I can take over and assign in on its computer and it will do it for me.
+[02:51] It's replacing my calendar.
+[02:53] So if I'm having a coffee chat with somebody, not like basically any edits, any event creation,
+[02:59] find booking like book conference rooms, anything I just put a screenshot and then let it do it.
+[03:05] Let it like add the events to the calendar, modify it, stuff like that.
+[03:10] Okay, so you have, let's go up to your Pins bots.
+[03:16] So you have a designer and a writer bot pinned.
+[03:19] So the writer is like your writing style and designer is like, yeah, maybe we can quickly walk through those.
+[03:25] Yeah, so this is a demo account that I don't have like everything here, but that's the exact same setup I have in my own account.
+[03:34] Those three are the most frequently used like chief of staff going to manage all other bots and the designers like I stayed in design tools every day.
+[03:42] And then designer is my go to bots. I'll have it like brainstorm with me or like ask it to spin off different design options for me.
+[03:52] And I'll just like discuss with it and not only like work with me on it, but also execute the ideas.
+[03:57] And then for the writer bots, currently like I'm not an English native speaker.
+[04:03] And then a lot of emails and Slack.
+[04:06] The message is I will have like the writer bot to polish it before I send it.
+[04:10] And we have a Slack and email chat widget. So you literally see the draft that inline here that you can review and send and decide how to modify, etc.
+[04:22] Got it.
+[04:23] This episode is brought to you by Granola.
+[04:26] If this episode is
+[04:33] about the best AI meeting notes app in the market, here's how I use it. Granola automatically takes notes during a meeting and I can add my own notes to after the meeting ends.
+[04:42] I use a granola recipe to extract clear takeaways and next steps in the exact format that I
+[04:49] want. Then I can just share notes directly in Slack with my colleagues or even get granola to
+[05:02] hold Peter to sign up and get three months free. That's granola.ai slash Peter. Now back to your episode.
+[05:10] You also have a channel like now app or something where you have a bunch of bots talking to each other.
+[05:14] Yeah. So what is that? Once you have bigger tasks that you want a different bots with different rows have their own perspective and contribute to it.
+[05:57] If you want a specific bot to reply to you, just simply mention it and only that bot would reply to you. If you just send a message.
+[06:06] In the group chat, just like how you message your friends in group chat, they will the review it and then they will reply. They will decide if they should reply from their own
+[06:13] their own and go. Yeah, this is very interesting. I don't think this is easy to do in some of the other.
+[06:19] Yeah, it's like keeping the context clean and having all these bots that have their own context chat with each other is pretty unique. Yeah, it's so there's like two angles you can think about the problem. Like some people manage their tasks and jobs by individual sessions, task and projects. And we are creating bots as more persistent named agents that have their own identity, memory system, had their own tools.
+[06:48] It's really like abstract what's reusable into the row. And then you can have them work together by creating separate chats and.
+[06:57] Group chats for them like even I have multiple projects with the same designer bot. I can create another chat with it like for a different project. Right. And then I can
+[07:08] do this repeatedly for different projects I'm managing because one thing we noticed is a lot of time.
+[07:14] In the AI agent. Products those chat are very ephemeral. They're almost disposable. Like you don't care. Like maybe you only care like top three to five that you actively working on and then for the chats like you happened two weeks ago, like you never go back. So I think this is a great way to like balance the two that for whatever reusable the capability, the memory.
+[07:37] Then you kind of abstract them into different roles and then for individual projects that has the
+[07:41] end to end to end. And then you can create this dedicated sessions and work with your bots in it.
+[07:49] And but just like a human designer bot, like if I taught a, designer bot for mail app and bark app
+[07:55] app, it knows about both. Right. In his context. Yes. Or is it separate? Yes. So when a, I bought is working in a group chat.
+[08:02] You will able to see like the work status has changed in its own DM. So it's the same entity. It's the same bot working on your task. Got it. Yeah. And then I have other use cases. I think it's pretty fun. Like prop is replacing my podcast tool right now because I listened to a lot of podcasts. But sometimes when I read an article, I want to listen to it when I'm
+[08:22] taking a shower. So I'll just simply send this Rink to my podcast bot, translate it into a podcast that I can listen anytime. So it's very, it's very interesting that you see it become like an automate, an ultimate
+[08:40] translator for different file formats. And also, I like to share this personal projects like the pipeline I set up. The story was I took a photo of a produce shop in San Francisco Chinatown, like two weeks ago. And when I was waiting for the bus. And then I turned it into like a 3d clay miniature using is an AI. And I thought, oh, this was fun. And I
+[09:09] put it onto my personal website.
+[09:12] And it was very minimal website. And I put it here. And then I wrote the line that last thing at a JVC marketing Chinatown. And then I thought, oh,
+[09:21] this could become a check in app. Because for personal website, like you put it up there and people visited once and then nobody came back again, like I don't even visit it that often. So I have this idea of making it an
+[09:34] app. And I can just automatically post the location and post the shop or store, whatever up there. So I started to talk to about this idea. And eventually I was able to land it on this pipeline that if I text it an image of the place I've been and also like who am I with the social handle of the person, it will be able to generate
+[10:03] two images in day and light mode. And I'll still remove the background and then eventually post it to my website site, something like this. So oh, nice. It was it was it was very whimsical fun, like personal project. But I think it's a different perspective to think about it is now I'm using
+[10:29] ground bought as like the main interface to to to post things instead. Instead of like having built an admin portal or CMS system and manually uploaded in the in the back end. And yeah, a lot of it is baked in baked in baked in this pipeline that I have this bot. But the latest playbook on this private repo and then follow the step and then like generated image, clean it up and then post it.
+[10:57] Okay, so so people can see all the places you've been to. And the typical designer you think about both day and light mode, I will not think about that. Yeah, that was good. Yeah.
+[11:07] And that's an example that use dropout in a creative way, almost thinking it is like a beauty module in the thing you want to build. And also the best part is it can guide you step by step towards that goal.
+[11:19] And before we move on to Lauren, your designer bot. So are you still like drawing boxes in Figma? Are you telling your bot to do everything? I need to review.
+[11:27] We so as basic XAI we do we design in whatever tools we need. We use Figma, we use canvas based tools, we have our own prototype environment to also submit our own, PR.
+[11:41] So the designer bot is really helpful to bouncing ideas with me. I also make quick changes because they connect the Figma MCP through the connector. So it will be able to like directly change frames and update the design and use design token.
+[11:59] I have this skill that the designer bot is able to use that so it know like how my Figma file setup is, what's my design system and when you use the right colors, typography, spacing when it created design for me.
+[12:15] Okay, so maybe it can do like the first 80% you can mount a tweak stuff or something. Yeah. Yes. Yeah. Or sometimes like my workflow has become I will do the first 5%.
+[12:26] I will create like I will view the system and I'll create like one key frame and then ask it to scale it into the whole flow and make it like an end to end screens.
+[12:36] Awesome. You should like open source your design skills like Lauren did with her PQP stack.
+[12:41] Yeah. Yeah.
+[12:44] The skills follow our names like Lauren and I have a pen mode.
+[12:50] Yeah, exactly, exactly. Awesome. Thanks so much for sharing. This is super cool.
+[12:54] Lauren, thanks for waiting. I would love to see how your setup is too. It's probably pretty different from.
+[12:59] Yeah, I wanted to share I guess more of the engineering use cases. So, so one thing I've been recently working on is adding better support for Omatchi, which is a Linux distribution that DHH and a couple of other really awesome open source folks have been working on.
+[13:17] And I've been using Grokbot to essentially kind of control. This is like a this is a special build of Omatchi which runs in a virtual machine on your Mac.
+[13:30] Just so like very alpha, but it works pretty well. But it's really really good to get my agent to literally like script and control the VM.
+[13:42] So what better way to build support for, you know, this particular flavor of Linux than to have Grokbot actually be able to open it on my computer and you know, like interact a bit install it like it installed a Grokbot for me.
+[13:57] You can see like it's actually doing that right.
+[13:59] Okay, so Grokbot is on his own computer, but it's controlling your computer through Omachi.
+[14:05] So yeah, so Grokbot has its own computer, but it also has a local execution daemon, I guess it runs on your computer.
+[14:13] So if you tell it to like another thing I often actually do is this, I have this agent called crumb, and I often just like run out of hard disk space.
+[14:22] So I just tell it's like, hey, go through my hard disk and like, you know, find where is all the space going? And it just goes off and like find stuff and to delete it.
+[14:31] But yeah, it has like full access to your computer and I mean, depending on the permission to give it, but it can, you know, then in this case, for me, because I wanted to try out Omachi and, you know, fix some bugs or work on the experience a little bit for Linux.
+[14:48] It was very powerful to be able to actually have the bot control the virtual machine itself, the Linux virtual machine on my computer.
+[14:57] Because yeah, that's like one thing I always talk about is that, you know, the importance of actually having the agent able to verify its own work.
+[15:05] So like this is one example where the agent can verify its work on your computer, in addition to, of course, like, you know, it has its own computer that you can, you know, take a look and see what it's doing.
+[15:19] But yeah, that's like one of the main use cases I have is doing like a lot of engineering work on on
+[15:30] Another thing I manage is like my own personal stack of plugins Pstack.
+[15:35] So all of the work I do on this plugin basically happens in here. I'll kick off cloud agents, cursor cloud agents,
+[15:47] which will essentially do evals for me. So in order to, like, make a change to my set of skills that I can trust that the skill, the improvements are actually going to result in better performance.
+[16:01] I have like an eval playbook in Pstack that teaches the agent how to actually like the spawn a couple of subagents of different models.
+[16:12] It will try out the prompt. It will make sure that the, you know, the intent, the goal that we actually set out to achieve was achieved and then only if it does achieve it, it will actually, you know, then that that pull request.
+[16:30] Yeah, so that's quite a lot of the engineering work that I do.
+[16:34] Okay, and I noticed your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your, your,
+[16:47] Yeah, I like, I, I, I asked my, so I have this bot called Dr. Eggbot, which I've also kind of shared on my socials.
+[16:54] But Dr. Eggbot, this is essentially my designer bot. I mean, not a designer, but like a bot designer bot who designs bots.
+[17:03] Bots for me with all of the rigor engineering rigor that I expect from the bots that I use.
+[17:09] And I also get it to come up with food theme names. I don't know. I guess it's like an Asian thing.
+[17:16] We, we love, we love food. So I got to call it, you know, call my bots and I'm cute like Daifuku, Diosa. So that's pretty fun.
+[17:26] Yeah. And then similar to Peng, I also have a chief of staff. I have a personal assistant. Personal assistant helps me with things like lunch, my flights, booking hotels.
+[17:41] Sometimes I ignore her and then she gets a little bit sassy.
+[17:45] Then my chief of staff, yeah, like helps me with just all sorts of random things.
+[17:52] But if you see in my sidebar, I have a bunch of like engineer bots here. I have some social bots as well that manage my, you know, my social media.
+[18:02] So a lot of the work that I do goes through these two or these three agents, I guess. Like either I'm, you know, and my chief of staff isn't working with like my Angeline matcha here.
+[18:16] Or, I
+[18:46] think that's a lot of things that's kind of, I'll say like this means I'm adding like a lot of context to that agent. That's, you know, kind of very diverse and very different, which can be like maybe confusing.
+[19:03] So one of the things that Dr. Eggbot does as well as like has a routine that Dr Eggbot will set up for you where you'll look through all of the bots that you have and the transcripts that you've been chatting with them about.
+[19:24] And they'll propose things like, you know, this bot keeps keeps doing this thing that's not so good and I will suggest like some improvements, whether it's skills or a new bot or adjustments to your routines.
+[19:39] It also goes through your existing routines as well and make sure that they're efficient because routines are actually quite if you have them run too often, often, it can be quite expensive on your usage because it just keeps waking up that agent.
+[19:54] Like if you do like, I don't know, every 10 minutes, that's like a lot of wake ups. So, Dr. Eggbot R does help a lot with that.
+[20:03] Okay, well, okay. I'm gonna give you a couple of questions. So for Suki bot, so you actually rely on to book flights and stuff? Like, do you actually rely on to make like big purchases or what was the most autonomy you've given it to?
+[20:17] So, yeah, I've actually booked my, so I'm going to give a toxin in London and Amsterdam as part of the compile on the road conference.
+[20:29] And so hopefully I don't leak my flight details. But yeah, like basically I booked the entire trip through to key.
+[20:37] And this was actually quite, I was actually quite impressed by how she did it because it was a very, it was kind of a complex like multi step flight. I don't know what you call it like, it's not as simple just like return flight from Orange County to London.
+[20:52] It was like Orange County and then to like Denver and then to London and then London to Amsterdam and Amsterdam back to back to my home.
+[21:01] And I booked it entirely through like we use this was a service called Navan, I guess, guess.
+[21:10] Okay, corporate thing. Yeah, it's like a
+[21:30] It did it all entirely autonomously. I just gave it a link to a Slack message and with some of the details of the conference and said, book some hotels and flights for me and you know, check in with me before you hit approve.
+[21:44] Sorry, if you hit book and then it came up with some proposals. And I just yeah, I just hit yes and just booked everything for me. So that was very, very nice. It's probably the biggest yeah, biggest purchase I've done through.
+[21:59] Through Godbot. I guess I okay, but but you still kind of got to like a plane chat where it plans to book and stuff, right? Yes, it wasn't. Yeah, it wasn't to the point yet where you know, I guess I didn't want to have like some crazy red eye flight or you know, like be put in like R the back of the plane.
+[22:18] Yeah, I wanted to approve it first. Yeah, I have a very similar bot that Mars I'm trying to book a vacation Japan again and like no you can set up like price alerts on Google Flies but like the plus more smart because it can find like other routes and stuff that I haven't set up. So it actually saved me like a bunch of money recently. Yeah, definitely can. Yeah, I also use it to book by my personal things like we're running out toilet paper, for example, I'll just sell like a lot of things.
+[22:48] Okay, get us reorder our Amazon order for for toilet paper, and it just goes off and does that there was a point actually like very early in the rock bot development, where we were still kind of iterating on it that one of the topics that came up was your bot being able to text you. So one of the things actually added to Tookie a while back was this, I basically gave her her own phone number through a third party service.
+[23:16] And then she would send so then she can actually text me because one thing I'm really bad about is remembering to eat lunch. So I need the reminder. And then I often will sometimes just get out of the summer's have I don't know, like do not disturb mode on on my on my Mac.
+[23:31] And I don't see the you know, the ping. But then I get the text message and makes it sound like oh yeah, I have to order lunch. And so I took a how to use DoorDash, of course, and you know, get me get me lunch.
+[23:46] I don't have to worry about you about it.
+[23:49] That's funny. Lunch is the highlight of my day. So I was looking forward. Yeah, I know you just get to in the zone, you know, and then you just forget to eat.
+[23:58] Okay, so my second question is, I noticed you have an angel lead and two engineer bots, right? So basically, you want to work on a ticket or something or how did that get responsibility to
+[24:09] you? Yeah, so I actually mostly talk to my chief of staff and then my chief of staff talks to the end lead. But I set these bots, these engineer bots up with Dr. Aikbaud, of course.
+[24:19] But one of the things I kind of drove, I told Dr. Aikbaud to do is to make sure that the end leads job is really to, you know, break down tasks into smaller
+[24:31] pieces and delegate and supervise other bots rather than do work on its own. So
+[25:17] but yeah, this allows me to essentially make use of those, depending on the type of tasks, because, you know, some tasks are more straightforward, and I just want like really fast speed.
+[25:29] Other tasks, you know, maybe require a bit more planning and a bit more reasoning, and then I'll might adjust the reasoning level. So cloud agents in Grokbaud give me a lot of very granular control, I guess.
+[25:41] And also ensures that, you know, like my bot kind of stays, I kind of treat each of these engineers as more like their supervisors in a way.
+[25:51] We have like, so we have like the end lead that manages them, but then they themselves try not to do work on their own. So they always spawn cloud agents for me.
+[26:01] So this is kind of like passing? Yeah, they do all the message passing, but let's me orche
+[26:04] like really massive agent swarms. So to do like, you know, like if I need to tackle a very big project, I can just talk to my chief of staff and say, you know, break this down, you know, I have a giant project, maybe let's do some planning first in a notion knock. And then it will start thinking about the phases of the of the work that it needs to do and then delegate it all to the Angeline and will then break it down even further and have the bots kind of work on that.
+[26:34] Okay, then each one will come back with like a PR and stuff and the bots will review it first. Is that kind of how it works?
+[26:39] Yeah, essentially. Although for me, yeah, one of the things that I've done a lot that I talk about a
+[26:55] lot of times is that I make it very agent friendly. The architecture of the code base is very agent friendly. So a lot of times that actually just lets me auto merge my PRs. So sounds kind of scary to say that sometimes actually don't even look at the PR until after it's landed. And then I'm like, okay, that looks good.
+[27:16] Yeah.
+[27:17] Wow. Okay. So like, you have like a software factory? Is that the buzzword?
+[27:24] I call it the Michelin kitchen. Because I think it's a factory. Yeah. Yeah, I like to call it a Michelin kitchen because to me Michelin kitchen, you see, like there's this when you think about a Michelin start kitchen, right? You think about the quality of the quality and the craft that goes into making those the product, which is a dish or a meal.
+[27:48] And there's still scale involved, right? Like, you know, a kitchen, a restaurant might have, you know, 50 seats or 100 seats. So you need to be able to produce quality at scale. So that's the aspirational vision I have is like, I want to set a Michelin kitchen, not just like, you know, a factory, which interestingly, I think a lot of people's like when you say factory, they have this connotation, like, oh, you know, it's just like, it's mass manufactured. It's like, it's slop is like low quality.
+[28:17] Yeah, but I try to aspire to do both right now. How do we get quality at scale? So yeah, this is a lot of the work I've done on P stack and like using rock with it is in that line of you know, how do we create that Michelin kitchen? Yeah, you should get that you should make like a concierge bar or something that talks like, you know, hey, we curate this PR from the local farm and talk like a like a very simple. Yeah, yeah, yeah.
+[28:42] Yeah, yeah, artisanal. Here's an artisanal PR for you to review.
+[28:47] So basically, like, this job is just to like, take your open source skills as I'm out building the product is that kind of what I do? Or like, yeah, yeah, no, it's great. You definitely have a total system set up.
+[29:00] Yeah, I think the interesting thing for me as well as I found that with P sack, and with like some of the so internally, we, we have like everyone has like, not everyone but a lot of people have their own mode skills.
+[29:13] So like, potato mode is what is called an open source, but then internally is called Lauren mode. and you know, like paying was sharing, there's paying mode, and like a lot of different, you know, engineers and you know, designers PMs have their own mode skills.
+[29:29] And I think this allows us to really compound on some of the skills that we've already set up in the code base. So, yeah, big, a big motivation for of the, you know, redesigning and architecting the ground but code base was so that everyone could contribute at a high level, not just engineers.
+[29:52] So a lot of care has been taken into doing that.
+[29:56] And of course, yeah, like people are kicking, kicking these agents off in Grokbot, as well as sometimes in cursor.
+[30:04] And the nice thing about cursor and Grokbot plugins is that they interoperate. So you can install P sack, for example, on both Grokbot as well as cursor and kind of reuse the same skills.
+[30:17] Interesting. Yeah, I didn't think about this. So your boss can also call different skills, right? Like, let's say I have like a right like me scale or something, so
+[30:24] just triggered the slash. Yeah, if you do a potato mode, you'll see that it's, you can use that skill there. And you can always look at the marketplace as well.
+[30:36] I actually don't know if there are other plugins that are just skills, but P stack is one of them.
+[30:42] But a lot of the plugins we have also come with skills. So in addition to like, you know, an MCP server. So for example, like if you I don't know if you install the x, the x plugin, for example, it includes, I think one skill in addition to the tool.
+[30:58] Yeah, and yeah, like, so, again, can contain like lots of different pieces of functionality that extend your Grokbot instance to do like, lots of really interesting things.
+[31:11] Awesome. Before we wrap up your share, like, I'm curious about your social bots like, yeah, how do you separate the signal from
+[31:20] the
+[31:22] Well, yeah, so a lot of me social bots are connected to x as well as like LinkedIn, which I guess I tend to use x more than LinkedIn.
+[31:32] But I have I have like one bot called potato, of course, who goes through all of the all of my mentions. So like, I have this like meme on x where if you say potato, I get a notification.
+[31:48] And that that's the spot. Basically, this bot is like has a routine where it's checking x, I think I set it to every 30 minutes or so to check for all the mentions.
+[32:00] And then I just jump in there and I'll often respond, or it was kind of like aggregate like, you know, like, you know, five users have reported the same bug, right? And maybe you should take a look at that.
+[32:10] And so I kind of think of the socials as not just not just managing my I guess my social networks, but also is a form of like my outer loop, where since I'm using the socials, I'll build a bit for work as well.
+[32:25] It means that you know, I can stay on top of like the pulse of, you know, people are reporting bugs, or they're running into issues, or you know, maybe a new feature that we launched is confusing, you know, like, I want to be able to like, stay connected to that and have that in my inner loop of in my engineers,
+[32:45] because then, because these are all just bots, right, I can I can always say like, I can go to like matcha and say, like, like, hey, you know, potatoes, blah, blah that and then the context can just be grabbed there, right?
+[32:58] I don't have to repeat all of the x context that I got. And if the copy, paste anything, I just say, go talk to potato and figure it out and come back to me with a design proposal for how we fix this issue.
+[33:11] So. I think like, yeah, when you, for me, the power of proper comes when you connect all of these different things together and have them kind of, I don't know, there's a better word for like, that synergize, you know, like the context can can be grabbed from lots of different places and kind of be grouped together in a way that is much richer than if I were to type it all out by myself.
+[33:37] Yeah. I, I mean that context
+[34:07] Yeah, I.
+[34:28] Got.
+[34:59] Is there any interest in doing that?
+[35:03] Ping, you want to talk about it?
+[35:05] Yeah, I think when we started designing Grokbot,
+[35:07] we started from a mindset of how can we enable people
+[35:12] to graduate from manually, manage the tasks themselves.
+[35:15] Because personally, I see it at like three different tiers
+[35:18] of working.
+[35:19] Like in the past, we work in a context ourselves.
+[35:21] We draw rectangles in Figma.
+[35:23] We type in tax in Ocean.
+[35:24] We send messages in Slack.
+[35:26] And now people already got into a stage
+[35:28] that we are prompting AI to do that for us.
+[35:34] But in a lot of setup that you've seen people doing right now,
+[35:38] like I believe moving towards the future
+[35:40] that instead of like manually managing all those bots,
+[35:45] people are starting designing the system,
+[35:46] designing the guardrail.
+[35:48] How to make the bots work together with other human
+[35:53] with you autonomously.
+[35:55] That was that agency and intelligence ingested.
+[35:58] And a lot of AI agent products were very model-centric.
+[36:03] Because you can see from the UI, it's very model-oriented.
+[36:06] We built harness around the model,
+[36:08] and then we'd give product around those harnesses.
+[36:11] So the interface was like tailored for like along the way
+[36:14] we create a lot of technical
+[36:21] It's an experiment to see how to make the concept,
+[36:25] the system model, match this user's mental model.
+[36:28] And then we found this personified name agents
+[36:32] worked pretty well and then resonate with people.
+[36:34] Because that's how you operate with the physical world today.
+[36:37] You don't need to know how the car insurance company works.
+[36:41] But you know how to call it.
+[36:42] You have an agent for that if you have a car accident.
+[36:45] You don't need to know how the medical system is working.
+[36:47] But it's the only way you have health insurance.
+[36:50] You have doctors, office, all those infrastructure
+[36:53] in the real world.
+[36:54] So have that point of contact become your like
+[36:58] main input-output interface is a paradigm shift for me.
+[37:04] Because we see like internal workflow become,
+[37:08] I catch a bunch of bugs,
+[37:12] then I just take screenshots and annotate them
+[37:14] and then dump into a bot.
+[37:15] And then it will create and post it into this notion page
+[37:19] that my engineer response would have picked it up from there.
+[37:22] So it's kind of like we started to use the app
+[37:24] in a direct way or a genetic way.
+[37:28] But somehow it was able to like connect all the dots together
+[37:31] and it organically grows into like new workflows
+[37:34] in a very autonomous and long running way.
+[37:37] Maybe that's like a general best practice
+[37:38] overall using this stuff.
+[37:40] Like it's.
+[37:41] Because in some ways like the humans in a loop
+[37:43] because we're we're also passing contacts
+[37:44] from one to another and like kind of try to provide
+[37:46] feedback.
+[37:47] And I don't know, I'm always a little bit skeptical
+[37:49] when people say, you know, I'm just going to go to bed
+[37:51] and let this bot do everything.
+[37:52] And like, you know, just make it this time
+[37:55] or build me an app and like I'll come back and it's perfect.
+[37:57] But I guess maybe.
+[37:57] Maybe you guys have more experience doing this.
+[37:58] Like, do you guys have any tips for maybe letting these bots run longer
+[38:03] without going off the rails or like kind of actually producing stuff that you want?
+[38:06] Other than using lower skills, like is there other tips to do this?
+[38:10] Yeah, I think the general thing for me is, yeah, I mean,
+[38:14] you don't have to use like PSAC or anything,
+[38:17] but I think there is something to do with with skills.
+[38:21] And I talk about this a bunch, but I think it ultimately comes back to trust.
+[38:25] Or like, how much trust are you willing to give your agents
+[38:29] or your bots to be able to do a task for you?
+[38:31] Yeah. And I think one thing I always try to encourage people to do,
+[38:36] you know, whether you are a PS,
+[38:37] that gives or not is to actually spend the time to sort of observe
+[38:47] the end of the conversation, you turn that into a skill, right?
+[38:50] You turn it into a reusable skill.
+[38:53] So, for example, I don't know, maybe you have a skill for
+[38:57] or you asked your bot to fill up an expense report form, glared on,
+[39:03] go through all of my expenses this month and filed,
+[39:06] you know, put it all into the expense tool,
+[39:09] find the receipts from my email, blah,
+[39:11] blah blah blah.
+[39:12] And once you've kind of iterated a lot on that first, first loop, right?
+[39:16] If you want to be able to get your skill good enough to the point where you can do
+[39:20] like slash expense report, right?
+[39:22] And it just does it well, right?
+[39:25] Yeah. And when you've gotten to a point where you can just do like a one shot, right?
+[39:29] You just say slash expense report and it just does the thing for you.
+[39:34] Then that actually gives you much more confidence to walk away and say,
+[39:37] OK, now you can just go off and automatically set up a routine.
+[39:41] Right. Like every time I have a new email come in that has a receipt,
+[39:45] you know, automatically file this report for me and you don't have to babysit it as much.
+[39:52] But I think there's no secret to that.
+[39:54] In my opinion, it's like whether it's like doing design work or engineering work or life admin work,
+[40:02] it all comes back to how much trust have you do you have in your bot?
+[40:06] And if you don't trust it yet, then, you know, there are things like skills
+[40:10] and you're prompting that kind of really help you build that trust.
+[40:15] But yeah, I think you need to.
+[40:17] It has to be kind of gradual.
+[40:18] It's very hard to get someone to, you know, who's maybe never used a bot before
+[40:22] or they don't have a lot of skills set up and then say, OK, now just, you know,
+[40:26] you can walk away. Of course, they're.
+[40:27] You're not going to be able to trust it because you haven't seen it through,
+[40:30] you know, what it can do.
+[40:32] But once you've done it once or twice of the agent and you know that they can repeat that,
+[40:37] then you can actually free yourself up and for your, you know, go do
+[40:41] do other things, right, because now you can trust your bot will do the right thing.
+[40:45] So, OK, so, OK, so I guess last question is if I just down a group, but then it sounds
+[40:49] like the steps are maybe set up a bunch of bots for your manual workflows,
+[40:52] go through the manually, and then if you could do a comfortable state,
+[40:56] tell them to build a skill and then eventually, so some routines to like do it proactively.
+[41:01] Is that kind of what you guys recommend?
+[41:03] That's my flow.
+[41:04] I'm kind of curious about your your.
+[41:06] Yeah, definitely agree. It's a very gradual process, because, typically,
+[41:11] you know, the recommended start simple, just give it a task and I thought,
+[41:14] because until today, I'm still testing the limit of it.
+[41:17] Basically, I'm trying everything I touch my keyboard and mouse and try to
+[41:21] dedicate it to it and see how it works.
+[41:24] So you almost have to over stretch it to see where the limit is.
+[41:28] And also, I would describe this as like a relationship between you and the bot
+[41:35] because it's very intentional design that all the capabilities are shared,
+[41:38] the tools, the connectors, the skills,
+[41:42] but the memory and preferences are local to each individual bot.
+[41:47] So it's kind of like abstracts those
+[41:50] reusable components into the role to help people manage.
+[41:55] And then like to form, form this relationship, it takes a bit of time,
+[41:58] but like try it with start a simple task, then start a recurrent task
+[42:03] and then do this set up routines, let it automate it, do it.
+[42:08] And maybe it might burn too much token and tone down a bit
+[42:11] and then get connected to more tools, skills,
+[42:24] and then it's like gradually it gets more mature and it knows you.
+[42:26] So it's even a very personal thing.
+[42:27] I mean, like you know yourself better and then your assistant definitely will be different from my assistant.
+[42:30] So it's this like mutual progress.
+[42:35] It's like an onboarding employee, right?
+[42:36] You can kind of trust them more over time.
+[42:38] Yeah, I feel like that's a very good way to put it.
+[42:41] It's like kind of hiring virtual employees, right?
+[42:45] And then you want to be able to trust them.
+[42:46] so that's the thing that you would have to train a new employee before you let them be autonomous.
+[42:53] I think.
+[42:54] If you set that up, then you can actually get into a really nice flow where
+[42:57] you
+[43:03] Now we can all be the CEO of the product.
+[43:07] Yeah, exactly.
+[43:09] Cool. Well, thanks so much both for walking through your setup and everything else.
+[43:13] I guess Lauren, people can find you on Potato.
+[43:15] Is that the handle?
+[43:16] Yeah, you can find me on x, Potato with E, P-O-T-E-T-O.
+[43:22] And Pen, do you want to stay anonymous or do you want to share a handle?
+[43:24] Oh, I'm also active on x.
+[43:26] My handle is my name, P-E-N-G-Z-H-E-N-G and then underscore.
+[43:31] aight guys, well thanks so much for your time and Grokbot is an amazing product.
+[43:34] We're out some building it and yeah, I'm excited to see what's next.
+[43:37] Yeah, thanks for having us.
+[43:38] Yeah, thanks for having us. It was really fun.
