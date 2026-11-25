@@ -1,0 +1,317 @@
+[00:01] Hi, my name's Lauren, you might know me as the Potato on X, and I work on Grogbot at
+[00:07] XXAI.
+[00:09] So last month I did something pretty crazy.
+[00:13] I shipped 2000 pull requests to production.
+[00:19] A lot of how I'm able to do this is through trust, and I think a lot about trust in terms
+[00:25] of how I can trust my agents to produce high quality work even when I'm not there.
+[00:33] And my argument and thesis for this talk today is that if you set up your intervieweeeem
+[00:40] for your agents really, really well, you can end up with something uphe I
+[00:47] or team software factory where you're producing very high quality code at much
+[00:54] higher rates than before.
+[01:24] agents were not cooking the individual components that go into the product anymore, we're still
+[01:32] responsible for the final outcome and thinking about our kitchen setup, right? Because depending
+[01:40] on how you set up your line cooks, your sous chefs, you know the kind of equipment they have,
+[01:45] the kind of training they have, you know dishwashers and the ratio I guess of line cooks to
+[01:51] dishwashers, all of these ingredients go into making the final product and I think this analogy
+[02:01] is really up. So I wanted to talk a little bit about a story before we begin where six months ago
+[02:11] we're in cursor before we were a part of SpaceX AI. I obviously had you know no agent skills to
+[02:20] to use, right? I just joined the company, it was a fresh code base and a fresh product that I was
+[02:26] working on. So at the time, cursor was building the replacement for the cursor IDE which is the new
+[02:36] agents window and before I joined the cursor agent window had quite a lot of performance issues
+[02:50] since I had spent some time on the React team before I joined cursor, it seemed like a good fit.
+[02:57] But when I first started, I quickly realized how manual this process was. Obviously I have done
+[03:05] performance work before but at the rate at which pull requests were being landed it was just
+[03:12] an insurmountable wall of pull requests that just kept coming in and I had no idea whether or not
+[03:12] the performance of the app would be regressing. So a lot of my early time on the cursor team was spent
+[03:20] looking at Chrome DevTools and the performance and doing performance traces and taking heap
+[03:26] snapshots and it was extremely, extremely manual. It was it was a lot of fun.
+[03:33] It was so manual, it got to the point where I just got really frustrated and started to think about,
+[03:41] you know, wait, we have agents, what am I doing? And so I started thinking about verification skills,
+[03:47] where, you know, what if my agent could actually run the application itself and take the traces for
+[03:54] me, understand traces and find the hot spots and basically he'll climb, you know, to a better
+[04:01] performance in our application automatically. And throughout the last six months of being
+[04:10] a cursor and SpaceX AI, you can really see that my product community has skyrocketed. And
+[04:16] I never set out to ship 2000 pull requests a month.
+[04:29] That was not a goal of mine at all. But I realized that all of the
+[04:34] skills, all the tools and code based changes I were making, lattered up to this idea of trust.
+[04:42] You know, I didn't know it at the time, but I had this thought in the back of my head,
+[04:47] which was, you know, I am the bottleneck. I need to be able to take all the knowledge that I have
+[04:55] as an engineer and impart them into into my team of
+[04:59] people so that I need to be the blocker for everything. And you can clearly see that it's paid off.
+[05:11] So I think it really comes down to.
+[05:16] Trust. But how exactly do you build that trust? And where do you start if you are, you know,
+[05:23] wherever you are in your journey of using agents. So when I started, obviously, I was in this
+[05:30] category, you know, the one to one to five range.
+[05:53] Basically, nothing happens. And the agents do the wrong thing.
+[05:59] And I would actually argue that this part, this phase of, you know, using agents is actually the
+[06:03] hardest to get out of, because it's not always very clear how exactly you get out of it.
+[06:10] And again, it just comes down to trust. You know, the reason you're unable to go from one, one or one
+[06:20] to five agents to something more like 100 is because you don't have trust in your agents work.
+[06:26] So if you don't have trust, and you try to spawn 100 sub agents or cloud agents,
+[06:31] you're going to quickly find that you're just going to a ton of slop requests and, you know,
+[06:37] a bunch of regressions and a bunch of bugs shipped. And no one's going to be very happy with that.
+[06:44] So that begs the question, how do you trust your agents more?
+[06:50] So for me, it came, it really started when I, like I said, I meant I joined the cursor team,
+[06:59] and I was starting to work on performance, where I realized the need for verification.
+[07:05] So H
+[07:29] is like more formal verification, where, you know, maybe you rely on our formal methods or, you know,
+[07:48] languages like lean or TLA plus to do, you know, verification so that you can check that,
+[07:55] you know, your business, logic, invariants are, you I always true and that
+[08:01] you can formally verify that your application is always in a correct state.
+[08:05] But I would say that, you know, even if you don't have the ability to run formal methods and very few
+[08:10] things, you know, you can do that. And I think that's a really good question.
+[08:16] So I think that's a really good question.
+[08:18] So I think that's a really good question.
+[08:20] So I think that's where I think the question is, you know,
+[08:25] but I would say that, you know, even if you don't have the ability to
+[08:46] run a formal method, you can do that.
+[08:48] So I think that's a really good question.
+[09:22] So you want your agents to be able to reproducibly be able to run the application and collect traces
+[09:31] and collect evidence that empirical evidence that code is working, that your performance
+[09:38] bar is being met. And rather than have your agents create scripts every time you know that can
+[09:46] differ between agent sessions, you can actually create a CLI that's within the skill directory,
+[09:55] and then your agents will just use that every time.
+[09:58] And then, of course, you need to actually invest in it and make it good so that it can handle
+[10:04] all sorts of different use cases and be able to run the application correctly.
+[10:16] Another thing that's also really important is this idea of a feature map.
+[10:21] So a feature map really is something that I kind of coined, I guess, where, you know,
+[10:29] we started using these control skills within Cursor. Then we quickly realized that, you know,
+[10:35] a Slack report would come in and a user would post a very vague screenshot, right R, like a very
+[10:41] small slice of the UI and just like three question marks. And the agents using our control
+[10:47] skills are just no idea. Like it could run the application, but it would just be guessing
+[10:51] at what exactly the user meant. And so I had this idea to create something called a feature map,
+[10:58] which is, I guess, kind of inspired by like a site map. It essentially is a form of materialized
+[11:07] memory, you know, like how exactly does your application work, what features does it
+[11:12] it have, how does a user reach it, you know, in terms of keyboard shortcuts or what DOM elements
+[11:19] to click on, you know, things like that, and what all the different features do.
+[11:25] And they are these, this feature map is stored in the skill itself in the code base as part of
+[11:33] the skill directory. And we have an automation that maintains this feature map as well.
+[11:40] But when we combine the CLI and the feature map, we quickly realized that this combination was very,
+[11:46] very powerful, because now it not only, you know, reproducibly control the application and
+[11:52] take traces, but it could also understand requests that came in from internal users as well as
+[12:00] external users. And so we very quickly realized that the control verification skills skills were so
+[12:09] useful that they've become more or less critical infrastructure for our team, and we constantly
+[12:16] maintain it. But the ability for it to verify its own work is extremely powerful. And we have
+[12:25] spent a lot of time on this skill. And it's very, very powerful for building that trust.
+[12:33] In addition to verification, of, of course, you. Want because verification is really about
+[12:41] correctness. Correctness to me is really about does the thing, this the feature or code do
+[12:48] thing that you want it to do, right? Like, does the, you know, the checkout button doesn't
+[12:53] actually check out the card. VerificationB
+[12:57] is really important for that, because you get empirical evidence that the speaker actually
+[13:02] works. But it doesn't tell you much about, you know, the performance or the code quality of that
+[13:09] feature. And that's where you start thinking about skills that teach agents to work like real
+[13:16] software engineers. So I've built a plugin called P-stack. I'm not going to talk about the
+[13:46] so debugging, you know, feature development, prototyping, there's a whole bunch of different
+[13:53] playbooks and skills that ship in P-stack that teach your agents how to write code the way that
+[14:00] you want them to. And, you know, this is where, you know, the more experienced engineers on your
+[14:06] team can really contribute to set up a team repository of skills that just make your
+[14:14] agents a lot, smarter. And when you combine those skills with verification skills, then you're able
+[14:23] to get the point where your agents are able to not just verify that the work that they're doing
+[14:29] is correct, but that is also high quality. And again, because of verification, you can collect
+[14:37] real performance metrics, you can get real numbers and statistics and telemetry on the performance
+[14:45] of the application. So I think that's a really important part to invest in.
+[14:55] Another thing I think is really important is refactoring and rewriting your architecture
+[15:01] to be more agent friendly. And I almost want to say that this is one of the most important
+[15:08] things you can do as a software engineering team, because if you really believe
+[15:16] that agents are going to be writing all the code in the future, then we need to design
+[15:20] our code bases so that they do the right thing by default. And you'll find that there's
+[15:27] a scale or continuum between these different pieces of building trust in your agents,
+[15:38] where I have five of these points here, where the code base is the best form of memory,
+[15:49] because agents love to extend existing patterns that. They see and I think this is just the nature
+[15:58] of how LLMs work, where they're more likely to use whatever it is in their context
+[16:04] window to make changes. And of course, the files that the agents read and opens are part of
+[16:13] its b context window. And therefore, the code base is a really important part of that. Because
+[16:19] you know, agents aren't going to just ref actor your code in every single PR. They're going to
+[16:25] just look at what's already there and just extend. The next level I think is about static analysis,
+[16:32] where you have compiler diagnostics, you have continuous
+[16:38] code base, and these are guidelines and constraints that you can enforce in your code base.
+[16:47] So that whenever you correct your agent, you find that you know, they just keep making the same
+[16:52] mistake. You can add those as lint rules, or even better, you can refactor your code base so that
+[17:00] the mistake that the agent is making becomes categorically impossible. And then a step,
+[17:06] above that, right, where where and this is where we're trying to get more into
+[17:11] less of like a hard constraint and enforcement and more into the realm of guidance. You S things like
+[17:18] rules, you have bug bot, you have skills, which you know, your agents will obviously sometimes and
+[17:26] mostly use when they're doing their work. But there's also a chance that it might,
+[17:31] for various reasons, you know, forget to read a rule, or maybe the user that is piloting the
+[17:37] agent ignores them. So these aren't quite as enforceable, but also an important part of
+[17:47] setting up your environment so that you can really trust what your agents are doing.
+[17:53] And then finally, you have a style guide, which is really only enforceable by humans
+[17:58] in a code review. I guess you could put it put these in your rules and bug bot and, and skills
+[18:03] as well. But if you don't, then you have this big glaring hole hole in your review process,
+[18:10] where now humans have to, you know, look at every single line that's being changed and remember
+[18:16] the comment and with the rate of pull requests that are coming in, it just, it just becomes
+[18:21] impossible. So I definitely wouldn't recommend, you know, relying only on, on the style guide.
+[18:27] I think the style guide or you know, know, like looking at human of views, is a good place to start
+[18:33] in terms of what's missing. But you should really invest the time to think about the other
+[18:39] four parts, you know, your code base, making things categor, categorically impossible through
+[18:45] better data structures or algorithms, static analysis. And then of course,
+[18:51] you layer that with rules and bug bot and skills. On the code base front,
+[19:01] and in the Grokbot code base, we actually have invested into some, some setting something up
+[19:07] that we call Dune, which is our agent friendly framework. So the inspiration for Dune
+[19:16] really came about from a lot of performance issues we're seeing, we were seeing in
+[19:21] the cursor agent window. And so a lot of lessons came out of that expiration. But
+[19:29] the key principle that we landed on is really that agents, agents love taking shortcuts.
+[19:35] So what if we designed a framework such that the shortcut, you know, the easy path is the
+[19:42] right path for agents. And also one, that would be a code base that is, you know, maybe
+[19:49] pretty annoying for humans to work in, because it's so locked down in terms of what you can do and
+[19:54] what you can't do. But it actually creates the perfect environment for agents, especially ones
+[20:01] that have very minimal context, because, you know, not every contributor to your code base is
+[20:06] going to be an engineer anymore. You can have designers, you can have product managers,
+[20:11] you can have CEOs, you know, going into the code base and shipping features.
+[20:16] So we want to really think a lot about how we invest and set up our code bases. So that,
+[20:23] you know, even agents that are piloted by busy people with not a lot of context can do a good
+[20:29] job by default. And like I mentioned before, your code base is really a form of memory for
+[20:38] agents, because they love to extend the existing patterns that they see. And
+[20:43] the reverse is
+[20:45] is actually also true, right, you can invest a time to
+[20:47] set up your code base in a way that things are, you know,
+[20:51] bad patterns are categorically impossible, or you have like
+[20:55] lit rules that prevent them. But the reverse is also true in the sense that
+[21:01] if you have existing anti patterns, you will actually find that these will spread
+[21:06] kind of like a virus, where you have like one small work around, or a comment that explains
+[21:14] the work around. And you'll quickly find that agents just love to copy that. And then in
+[21:20] a matter of a few days or a few weeks, you'll find that the workaround has spread everywhere.
+[21:26] And it's now becomes it has become like a de facto pattern for all agents. And that's a
+[21:32] really, really bad place to be to be in. And that goes back to what I was saying about
+[21:37] why it's really important, you know, whenever you're correcting your your agents,
+[21:41] that you invest the time into thinking about code base changes, and static analysis to and
+[21:48] of course, layering them with rules, good rules and bug bot and skills because of that reason.
+[21:59] And another analogy that I like, in addition to the Michelin kitchen is this idea that,
+[22:04] you know, your code base is kind of like a garden, where you have work arounds, you know,
+[22:11] that seem seemingly that seem kind of innocent at first. First, then because of the nature of
+[22:17] agents, you just copy that pattern over and over again. And you quickly end up with a very,
+[22:23] you know, vibe coded code base that is, you know, a pain in the butt to maintain,
+[22:30] and has a lot of performance issues. So in my opinion, the perfect agent code base is one that's
+[22:36] so locked down, that, you know, it's again, it's like really annoying for humans to write code in.
+[22:42] But it's so conventional, it's so standardized, that, you know, even innocent looking patterns
+[22:50] are just forbidden. And the best example of this I have, is something that seems very, very innocent
+[23:09] You know, when I first saw agents starting to do this, I initially wasn't, well, I did think that
+[23:15] a lot of them are sloth, but I also thought that, you know, it actually doesn't, it's not a bad thing,
+[23:20] right? I guess if agents are leaving comments in the code, because as humans, comments in the code,
+[23:26] whenever we saw, you know, edge cases, or we needed to actually make a workaround, or, you know,
+[23:34] leave a note to ourselves, or a colleague on a
+[23:34] particularly tricky part of the code base. But what I quickly realized when we saw this happening
+[23:45] in the cursor code base, was that agents were just using the comments around the code as
+[23:52] justification for why it wasn't going to solve the actual problem, and instead paper over it with a
+[23:59] band-aid or a short term solution. So in Dune, which is again the framework that powers Groffot,
+[24:09] we made the choice to, we made the choice to actually ban comments for that reason,
+[24:18] so that agents would not just copy that pattern and, you know, propagate it everywhere in the code base..
+[24:28] So my pitch here is that every team really needs something that, you know, a role that I'm calling
+[24:35] a gardener, in the same way that, you know, with a real garden, you
+[24:41] need someone who is thinking a
+[24:42] , you need someone who is thinking a lot about the things that can kind of creep in and grow in ways that you
+[24:50] don't want, like, you know, your weeds, you have, you know, just other types of organic growth.
+[24:57] I don't really know I'm gardening that well. But you have things that, you know, unwanted pests and
+[25:04] stuff like that, that kind of creep in in pure code base. And so you want to nip them in the
+[25:09] as soon as possible before they start propagating everywhere.
+[25:15] A lot of the principles behind Dune are really centered around these three things.
+[25:20] First of all, we want to delete the tech depth that we already have for, you know,
+[25:24] for reasons I just mentioned. We want to enforce a single paved path for most a most blessed pattern.
+[25:34] You know, there should be one conventional way to do some things.
+[25:38] So that agents don't really need to guess and there should be enough guidance in the code base,
+[25:44] in CI, in lint rules, so that the agents are guided to follow that path.
+[25:53] And then finally, whenever you see tech depth or bad patterns, your instinct should be,
+[25:59] I need to write a lint rule against it. You don't always have to clean it up immediately.
+[26:04] Because if you write a lint rule, you can at least stop the bleeding.
+[26:08] And which, you know, doesn't solve the problem
+[26:10] the problem entirely, but it at least prevents it from growing.
+[26:14] So I definitely recommend, you know, really thinking a lot about how you can guard against
+[26:19] anti patterns so that they don't spread like a virus and then also spend time to actually,
+[26:27] you know, get your agents to clean them up so that your code base is just constantly kept
+[26:32] in a state where you would be happy if an agent were to copy it.
+[26:38] That's the kind of mindset that I would recommend having.
+[26:42] And then I won't actually go through all the details of Boon itself,
+[26:46] but I'll just kind of gloss through some interesting parts.
+[26:49] So again, as a reminder, Boon is the architecture, the client framework that we built to power
+[26:54] Grokbot. We've invested a lot into all the things I was saying, where we have
+[27:01] conventions Boon conventions, we have a lot of conventions about where a coach should
+[27:03] code should be imported foothold between them. So in doing applications, you know, there's a
+[27:33] you know, the Gro a machine. And
+[28:03] intentionally, because, because of lessons that we
+[28:33] for
+[29:03] as an example
+[29:33] of your own is actually very,
+[29:34] very powerful and you can encode all of the learnings that you and your
+[29:41] best engineers on your team have tribal knowledge of and I think the lesson here
+[29:48] is that how do you take that away from what used to be in the style
+[29:53] guide process of reviewing code and engineers reviewing other engineers
+[29:59] work and leaving comments to extract almost like extracting that knowledge
+[30:06] into the framework the code base itself so that the code base access the memory
+[30:12] right it's the thing coming back to this idea that you know the code base is
+[30:17] just the thing that it's the materialized snapshot of the state in
+[30:23] which you want your agents to extend and you want that code base to be the
+[30:27] so pristine so great that the next agent that comes along is just very likely to
+[30:32] continue that pattern and keep it really really good and if you spend
+[30:40] spend enough time on this process like I mentioned you can really set up a
+[30:44] Michelin kitchen or software factory where because you've spent so much
+[30:51] time on you know pieces that allow you to trust your agents whether it's in the
+[30:58] code base whether it's lit rules whether it is you know diagnostics or rules
+[31:06] or bug bar or skills these layers come together and provide you a lot of
+[31:13] trust because now you know just imagine from when you're working in the
+[31:19] building you know you can use the code base to write code
+[31:25] it's super locked down you know it's like almost impossible to write bad code
+[31:31] so you know you can even an agent with very little context you know even an
+[31:36] agent with not a lot of reasoning can come in and actually write code that's
+[31:41] good and going back to my example about the Michelin factory I think there's a
+[31:46] lot of tools and tools you know we're training them we're setting up our
+[31:51] kitchen in a way that makes sense right for the agent and bots to do the right
+[31:57] thing by default you know we're in the kitchen example if we notice that one of
+[32:04] our cooks or dishwashers is constantly tripping over something of course we
+[32:09] need to problem solve and ensure that you know others don't trip as well because
+[32:13] you know in the kitchen is a very dangerous place and you don't want to
+[32:16] hurt yourself. It's the same mindset I think that we should have with our
+[32:21] code bases how do we set it up so that even agents without a lot of
+[32:28] knowledge can and do a good job and I think with you know Grokbot
+[32:37] and Cursor play an interesting role together where Grokbot is really great at
+[32:44] providing what a call the outer loop because you can connect Grokbot to lots
+[32:49] of different you know different connectors like slack to data dog,
+[32:54] sent-tree, planet scale whatever services that you use and you can aggregate all
+[33:00] of that information together and use that to make really good decisions for
+[33:04] itself. Some people call this like a company brain I don't really think I
+[33:10] personally don't think you need anything that. sophisticated here because
+[33:14] agents are really good at using tools and so if you connect these tools to
+[33:19] Grokbot and you start having your Grokbots auto kick off things like cloud agents
+[33:27] you can actually find that it's really not you don't really have to
+[33:32] invest in a lot of infrastructure to build a software factory. In fact I'm
+[33:37] gonna you know cross out this term because I don't like this term. I think
+[33:45] you can set up this personal Michelin kitchen for yourself through
+[33:50] Grokbot things like Grokbot routines which let you subscribe to you know slack
+[33:54] threads to sentry alerts that let you kick off things automatically and when
+[34:01] you combine all of these things that I've been mentioning, your code base,
+[34:05] your rules, your skills, they all compound and Grokbot will be able to you know
+[34:13] automatically respond to events that come from the outer loop and then kick off
+[34:19] cloud agents and you can also set up cursor automations and use our SDK to set
+[34:26] to set up additional bots as well that reuse a lot of these pieces of agent infra
+[34:34] that you've set up and allow them to do much more complicated tasks. So if you've
+[34:43] done all this then I think you can get to a point where you know I have some
+[34:48] screenshots here of some of our automations and our agents in that work on a
+[34:55] cursor where we are automatically reproducing bug reports, we're
+[35:01] automatically opening pull requests, we are essentially adding a lot of value to the
+[35:09] entire team because all of these things compound. So if we kind of zoom out again
+[35:18] and go back to the graph. I think that to kind of close off the talk, if you spend
+[35:27] a lot of time thinking about all of the pieces that you need to send the
+[35:33] trust graph, you start getting to a place where you can really trust your
+[35:39] agents more and parallelize your work and also empower your entire team to build
+[35:45] on top of these pieces of infrastructure for your agents and empower everyone,
+[35:53] every engineer on your team, every builder to be extremely productive and be able to
+[35:59] write high quality code. So the last thing I want to leave you with is actually
+[36:03] this piece. Sorry, not that piece, but this piece. I think if there's only one
+[36:10] thing you take away from my talk, it should be this slide here, which is, these are
+[36:16] the activities that will help you build up towards a high trust environment.
+[36:22] Whenever you find yourself correcting and interviewing your agent, you really
+[36:28] want to think about it from these five pieces. And where is the most effective
+[36:34] step in this sequence in order to make your agent more trustworthy.
+[36:44] And of course, I definitely recommend thinking about it in this order
+[36:48] order, where you either invest the time to make that pattern
+[36:54] categorically impossible through your code base and architecture and data structures,
+[37:00] , or you start looking at things like static analysis,
+[37:03] and then you layer that on with rules and bug bots and skills.
+[37:08] If you do all of that, and you also spend some time thinking about your code
+[37:14] quality in terms of skills, you get to a place where you trust the
+[37:22] environment so much that your agents can just be free.
+[37:27] And personally, I have spent a lot of time for this for GrokBot's code base,
+[37:33] for example, and this is really the secret. Well, it's not really a secret.
+[37:38] It's a lot of hard work, but I hope you found this talk useful.
+[37:44] And please. Please reach out to me on X. My handle is potato with an E.
+[37:50] And I hope that you'll have a lot of fun and successfully your own Michelin Kitchen.
+[37:59] Thanks for watching.

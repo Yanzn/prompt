@@ -1,0 +1,165 @@
+[0:00:00] Personally, I think that the best use of AI is really like someone you're pair programming
+[0:00:09] with and not someone that's not a tool to just replace the act of writing code or worse
+[0:00:15] outsourcing your thinking.
+[0:00:17] And I think there's a tendency, you know, because AI is so exciting, you want to put
+[0:00:22] AI everywhere and be seen as someone who is very, you know, what do you call it, like
+[0:00:28] I guess with AI, that you feel this pressure of like,
+[0:00:33] I'm just gonna, I gotta increase my productivity,
+[0:00:36] I gotta ship like 100 PRs this week
+[0:00:38] and barely understand what I'm doing
+[0:00:40] and vibe code my way to a million ARR or whatever.
+[0:00:46] But I think one of the things that I've personally seen
+[0:00:51] is that although when I use AI,
+[0:00:53] I save some time writing the code,
+[0:00:56] I actually find myself spending more time reviewing what AI did and correcting it.
+[0:01:01] So I've tried the thing that a lot of people say, instead of prompting an AI to just build
+[0:01:08] the feature outright, you get it to build a spec for you first, then you review that
+[0:01:13] spec and then you do that whole thing.
+[0:01:16] Then it's like...
+[0:01:17] Okay, so I assume you can see my screen.
+[0:01:18] Yes, yeah, we're good.
+[0:01:20] So yeah, today...
+[0:01:21] Yeah, I think the big theme for me as I've been using agents to write code, and I'm
+[0:01:26] I'm sure a lot of you have had the same experience as well,
+[0:01:28] is how do you trust it?
+[0:01:31] Especially if you are an engineer that's
+[0:01:33] been writing code for a very long time,
+[0:01:35] you have a lot of opinions and lessons
+[0:01:38] that you've learned about doing good engineering.
+[0:01:41] And when you see agents just winging it and guessing,
+[0:01:45] hallucinating, confidently stating
+[0:01:48] that they found the smoking gun for the hundreds of time,
+[0:01:52] but it's actually not the real problem,
+[0:01:54] you lose a lot of trust.
+[0:01:56] And when you lose, when you don't have much trust in your agents, I feel like you really
+[0:02:00] can't get the most out of them.
+[0:02:03] And for me, the parallel is like with management.
+[0:02:06] So if I'm an engineering manager for a team and I have a bunch of, you know, I have a
+[0:02:11] team of engineers on my team and I don't trust them, then the mode of operation I'm
+[0:02:17] going to be in is going to be like my management, right?
+[0:02:19] I'll have to spend a lot of time looking over my report's shoulders and checking that
+[0:02:25] that they're doing their work well,
+[0:02:27] that they're not shipping bugs to production.
+[0:02:30] And so I drew this chart because it's not
+[0:02:34] a very scientific chart, but this
+[0:02:36] is how I imagine myself and my journey through using agents.
+[0:02:41] So fast forward or back forward or fast backwards
+[0:02:48] like a year or so when not many.
+[0:02:52] People were using agents to code.
+[0:02:54] I think you get into this mode where you are very heavily
+[0:03:01] in the loop with one or several, like a handful of agents.
+[0:03:05] And you find yourself just constantly trying
+[0:03:08] to understand what your agents are doing.
+[0:03:10] And you're very, very in the loop.
+[0:03:12] You're watching every single output.
+[0:03:14] You are sitting there prompting.
+[0:03:16] And you really can't parallelize beyond that
+[0:03:19] because, again, you don't have that trust.
+[0:03:22] You can't go to 100 agents, like spawn 100 agents
+[0:03:26] when you don't even trust the output of one agent.
+[0:03:29] So over the past five months, I feel
+[0:03:32] like I've really been able to like ascend this trust curve.
+[0:03:37] And now I'm at the point where I actually have,
+[0:03:41] this sounds kind of scary to say this,
+[0:03:42] and it makes me sound like a slop artist,
+[0:03:44] but I promise I'm not.
+[0:03:46] But I actually have my agents now auto-emerging PRs for me,
+[0:03:50] which is like a wild thing to say, but like I woke up today and there were like 20 PRs landed and I just reviewed them on
+[0:04:01] on main like they were already landed and they were good. So how did I get to that point? It's basically what I wanted to talk about today.
+[0:04:06] And again, feel free to jump in if you have questions, Colin.
+[0:04:11] But, oh yeah, of course I gotta show this chart.
+[0:04:16] Where, no, do not trust someone requested to control my computer.
+[0:04:24] Probably won't do that.
+[0:04:26] But yeah, so this chart, I think, I'm sharing this chart not to kind of like flex, but to kind of show the journey.
+[0:04:34] Like so you can see like the curve like it's sort of like inversely matches the contributions
+[0:04:39] I've been able to land at cursor
+[0:04:41] So I joined five months ago and five months ago like I said, you know
+[0:04:45] My first month I was like not very productive because I was you know, I was learning the code base
+[0:04:49] They didn't know what the heck was going on and as I got more confident in my agents
+[0:04:55] I've really been able to kind of ramp up my productivity
+[0:04:58] And again, like, yeah, like last month I shipped a thousand PRs, which is ridiculous.
+[0:05:05] And then this month we're only on the 12th.
+[0:05:07] I'm already at almost 800 PRs landed.
+[0:05:12] So the velocity is definitely high.
+[0:05:15] And I'm sure a lot of you will definitely be questioning how much of this code is actually
+[0:05:19] good.
+[0:05:21] And I think, yeah, that's definitely fair to question.
+[0:05:25] But yeah, I think if you set up your agents well, you can definitely get to a very similar
+[0:05:33] level.
+[0:05:34] And so I'm going to talk about how we do that.
+[0:05:40] So for me, I think I'm curious, like I guess calling your experience as well.
+[0:05:44] But for me, I think the most important skill that you should have in your toolbox when
+[0:05:51] you work is verification.
+[0:05:54] verification, I mean the ability for an agent to actually run the code or take CPU traces or
+[0:06:03] heap snapshots or open an iOS simulator, whatever, you know, however your application is exposed
+[0:06:10] to your users, it can do the same thing and run it for real and actually test and verify it don't
+[0:06:18] work. Because that's the thing that really closes the loop. It doesn't guarantee your agent writes
+[0:06:24] good code, but it allows them to at least write correct code, which is a big, a really big step
+[0:06:30] forward for being able to trust your agent. I can share one example that we have within cursor.
+[0:06:40] Oops, where, let me open this full screen.
+[0:06:56] There you go.
+[0:06:58] So for the, for cursors, agent window.
+[0:07:02] So this is actually an interesting story,
+[0:07:04] but when I joined cursor five months ago,
+[0:07:08] they're actually, well,
+[0:07:10] I was supposed to join a different team.
+[0:07:11] I was supposed to join like the cloud agents team,
+[0:07:14] but then since I have a lot of experience working on React
+[0:07:17] and agents window is a React application.
+[0:07:20] I was asked to basically help out with the agent window work.
+[0:07:28] But there wasn't really a lot of skills to help me.
+[0:07:34] So I just found myself, OK, agents window
+[0:07:36] is going to launch in a week.
+[0:07:37] We have a really tight deadline.
+[0:07:39] And I was just sitting there, OK,
+[0:07:44] I'm going to open up the Chrome DevTools
+[0:07:46] and just like take a trace, look at it myself,
+[0:07:49] and try to make sense of this flame graph.
+[0:07:51] And keep in mind, I was just like in my first week.
+[0:07:53] So I had no idea what I was looking at, no idea what,
+[0:07:56] you know, I mean, I had some idea,
+[0:07:57] but the code base was completely fresh to me.
+[0:08:01] And I realized like my agent had no idea either,
+[0:08:04] you know, like I would take a screenshot of the trail,
+[0:08:06] download the trace, I would send it to an entity like,
+[0:08:08] yeah, it kind of looks like this, you know,
+[0:08:10] and it would like confidently state like it's this thing.
+[0:08:13] And then I try to fix that.
+[0:08:14] And turns out that's not the actual thing.
+[0:08:16] So this was a very, very slow process.
+[0:08:19] And if you've ever done any performance work yourself,
+[0:08:22] or just even development with an agent
+[0:08:24] where you don't have a verification skill,
+[0:08:27] you are the verifier.
+[0:08:29] You're the bottleneck.
+[0:08:30] You tell your agent to do something,
+[0:08:32] and then it goes off and writes some code.
+[0:08:34] Then you open up your local dev build,
+[0:08:36] and then you start to say, oh, it doesn't work.
+[0:08:38] Then you have to copy, paste screenshots or console errors
+[0:08:42] or whatever.
+[0:08:43] And then your agent slowly works with that,
+[0:08:48] and then tries to understand it and fix the thing.
+[0:08:52] But then you're constantly just in the loop
+[0:08:54] and being a bottleneck.
+[0:08:55] So there's really no way to parallelize.
+[0:08:57] So the control glass goes like one of the first skills
+[0:08:59] I built for cursor.
+[0:09:02] And glass, by the way, is the codename for agent's window
+[0:09:05] that we use internally.
+[0:09:06] But it's just cursor, I guess.
+[0:09:10] And so this skill is, I guess, the code itself
+[0:09:14] is not super interesting.
+[0:09:15] Your agent can very easily make one for you,
+[0:09:18] where if you're building an electron app or a web app
+[0:09:21] or even iOS applications, you can
+[0:09:25] teach your agent how to use the Chrome DevTools protocol
+[0:09:28] or through Apple has some utilities
+[0:09:32] as well for running the simulator and taking traces
+[0:09:34] and controlling programmatic control as well.
+[0:09:38] So that's really useful.
+[0:09:41] But one thing I actually want to talk about is this thing.
+[0:09:48] It has to read, me.
+[0:09:50] So this skill comes with this very unique feature called,
+[0:09:54] or not feature, a unique file called a feature map.
+[0:09:58] And so the story then is.
